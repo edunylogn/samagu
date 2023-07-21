@@ -1,22 +1,26 @@
-/* Estilos para pantallas más grandes (computadoras) */
-@media (min-width: 768px) {
-    .testimonials-info {
-        padding-left: 20px; /* Agregar un espacio entre la imagen y el texto */
-    }
+/* Estilos generales */
+.testimonials-thumb {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
-/* Estilos para dispositivos más pequeños (dispositivos móviles) */
-@media (max-width: 767px) {
-    .testimonials-thumb {
-        flex-direction: column; /* Cambiar a disposición de columna para dispositivos móviles */
-    }
+.testimonials-image {
+  max-width: 200px;
+  margin-bottom: 15px;
+}
 
-    .testimonials-image {
-        max-width: 100%; /* Asegurar que la imagen se ajuste al ancho del contenedor */
-        margin-bottom: 15px; /* Agregar un espacio entre la imagen y el texto */
-    }
+/* Estilos para pantallas más grandes (computadoras) */
+@media (min-width: 768px) {
+  .testimonials-thumb {
+    flex-direction: row;
+    justify-content: center;
+  }
 
-    .testimonials-info {
-        padding-left: 0; /* Resetear el padding izquierdo para dispositivos móviles */
-    }
+  .testimonials-info {
+    margin-left: 20px;
+    text-align: left;
+  }
 }
