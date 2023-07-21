@@ -8,7 +8,8 @@
 }
 
 .testimonials-image {
-  max-width: 200px;
+  max-width: 100%; /* Ajustar el tamaño de la imagen para ocupar el ancho del contenedor */
+  width: 50%; /* Reducir el tamaño de la imagen a la mitad en pantallas de computadoras */
   margin-bottom: 15px;
 }
 
@@ -24,3 +25,4 @@
     text-align: left;
   }
 }
+
