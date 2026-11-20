@@ -1,0 +1,85 @@
+/* ==========================================================
+   Samagú Rodríguez — tema de marca (coincide con el dossier)
+   Cargar DESPUÉS de tooplate-ben-resume-style.css y custom.css
+   Reemplaza las variables de color de la plantilla; no cambia
+   tipografías (Plain) ni la estructura de la página.
+   ========================================================== */
+
+:root{
+  /* --- variables de la plantilla Tooplate (se sobreescriben) --- */
+  --primary-color:  #0098e0;   /* azul del logo: botones, acentos, puntos del carrusel */
+  --dark-color:     #0f1823;   /* azul marino: botón, enlaces, texto fuerte */
+  --menu-bg-color:  #0f1823;   /* fondo del menú al hacer scroll */
+  --gray-color:     #9fb0c0;   /* enlaces del menú */
+  --p-color:        #3a4350;   /* texto de párrafos */
+
+  /* --- paleta propia --- */
+  --sam-blue-dark:  #007bb8;
+  --sam-tint:       #e5f4fc;
+  --sam-concrete:   #f2f4f6;
+  --sam-line:       #e2e6eb;
+}
+
+body{color:var(--dark-color)}
+::selection{background:var(--primary-color);color:#fff}
+
+/* ---- menú: el hover pasa a blanco con subrayado azul */
+.navbar .nav-item .nav-link:hover,
+.navbar .nav-item .nav-link.active{color:#fff;border-bottom-color:var(--primary-color)}
+.navbar .custom-btn{color:#fff}
+.navbar .custom-btn:hover{background:#fff;color:var(--dark-color)}
+
+/* ---- botón principal (fuera del menú) */
+.custom-btn:hover,
+.custom-btn:focus{color:#fff;background:var(--sam-blue-dark)}
+
+/* ---- INICIO y CONTACTO: fondo oscuro con cuadrícula, como la portada del dossier.
+        (Para volver al fondo claro, borra solo este bloque y usa images/logo.png) */
+.hero{
+  background-color:var(--dark-color);
+  background-image:
+    linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);
+  background-size:32px 32px;
+  color:#fff;
+  padding:3rem 0;
+}
+.hero h1,.hero h2,.hero h3,.hero h4,.hero h5,.hero h6,.hero p,.hero li{color:#fff}
+.hero a{color:#fff}
+.hero a:hover{color:var(--primary-color)}
+
+/* logos de Procomer / Pymes tienen fondo claro: tarjeta blanca */
+#contact img{background:#fff;padding:10px;border-radius:4px;margin-bottom:12px}
+
+/* redes sociales sobre fondo oscuro */
+.hero .social-links a{color:rgba(255,255,255,.75)}
+.hero .social-links a:hover{color:var(--primary-color)}
+
+/* ---- NOSOTROS */
+.about h3{position:relative;padding-bottom:12px}
+.about h3::after{content:'';position:absolute;left:0;bottom:0;width:44px;height:3px;background:var(--primary-color)}
+.about-third h3{color:var(--primary-color)}
+
+/* ---- EQUIPO */
+.testimonials{background:var(--sam-concrete)}
+.testimonials-thumb{
+  background:#fff;
+  border:1px solid var(--sam-line);
+  border-top:3px solid var(--primary-color);
+  padding:24px 20px;
+}
+.testimonials-info h6{color:var(--dark-color)}
+.testimonials-info span{color:var(--primary-color);font-weight:var(--font-weight-bold)}
+.testimonials .owl-theme .owl-dots .owl-dot span{background:#c9d1d9}
+.testimonials .owl-theme .owl-dots .owl-dot.active span,
+.testimonials .owl-theme .owl-dots .owl-dot:hover span{background:var(--primary-color)}
+
+/* ---- PROYECTOS (usa la clase .faq) */
+.faq h3{color:var(--dark-color)}
+.faq .owl-theme .owl-dots .owl-dot span{background:#c9d1d9;width:30px;height:3px;margin:5px}
+.faq .owl-theme .owl-dots .owl-dot.active span,
+.faq .owl-theme .owl-dots .owl-dot:hover span{background:var(--primary-color)}
+
+/* ---- formulario (si se reactiva) */
+.contact-form #submit-button{color:#fff}
+.contact-form #submit-button:hover{background:var(--dark-color);color:#fff}
