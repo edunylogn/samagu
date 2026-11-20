@@ -1,0 +1,21 @@
+RENOVACIÓN WEB — CONSTRUCTORA SAMAGÚ RODRÍGUEZ S.A.
+
+Archivos actualizados:
+- index.html: nueva estructura corporativa en español.
+- css/samagu-theme.css: diseño adaptable y paleta inspirada en el dossier 2026.
+
+Se conservaron las carpetas de imágenes, documentos, recursos y demás archivos del proyecto.
+
+PARA PUBLICAR:
+1. Haga una copia de seguridad del sitio actual.
+2. Descomprima este paquete.
+3. Suba el contenido de la carpeta samagu-main al directorio raíz del sitio, conservando la estructura de carpetas.
+4. Acepte reemplazar index.html y css/samagu-theme.css.
+5. Verifique la página en computadora y celular. Use Ctrl+F5 para evitar caché.
+
+NOTAS:
+- El enlace al dossier apunta a images/Samagu_Company_Dossier_2026.pdf.
+- Los datos de contacto y los hitos empresariales se tomaron del dossier corporativo facilitado.
+- Los perfiles del equipo se basan en la información del dossier; se muestran iniciales en lugar de fotografías individuales para evitar asociar imágenes sin confirmar.
+- No se añadieron redes sociales ni formularios falsos. Los enlaces de correo y teléfono funcionan como contacto directo.
+- Antes de publicar, confirme que el dossier PDF y todas las imágenes de la carpeta images se encuentren en el servidor.
