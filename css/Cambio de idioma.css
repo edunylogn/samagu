@@ -1,0 +1,9 @@
+/* Clase para ocultar elementos */
+.hidden {
+    display: none;
+}
+
+/* Clase para mostrar elementos */
+.visible {
+    display: block;
+}
